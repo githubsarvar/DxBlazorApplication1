@@ -39,8 +39,9 @@ app.UseHttpsRedirection();
 app.UseStaticFiles(new StaticFileOptions
 {
     ServeUnknownFileTypes = true,
-    DefaultContentType = "text/plain"
+    DefaultContentType = "111text/plain"
 });
+
 
 app.UseAntiforgery();
 
