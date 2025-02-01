@@ -24,7 +24,6 @@ builder.Services.AddScoped<IClass2, Class2>();
 builder.Services.AddTransient<IClass2, Class2>();
 builder.Services.AddSingleton<IClass2, Class2>();
 
-
 builder.Services.AddMvc();
 
 var app = builder.Build();
