@@ -1,0 +1,36 @@
+﻿@page "/counter"
+@using ClassLibrary2
+@rendermode InteractiveServer
+
+@inject IClass2 cl; 
+
+<PageTitle>Count1</PageTitle>
+
+<h1>Coun</h1>
+<button>sdsds</button>
+<Component1></Component1>
+
+<div class="counter-block">
+    <div class="counter-content">
+        <div class="counter-count">
+            @currentCount
+        </div>
+        <div class="counter-text">
+            current count
+        </div>
+        <div class="counter-block-back"></div>
+    </div>
+    <DxButton  Click="IncrementCount">Click me</DxButton>
+</div>
+
+@code {
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+
+        cl.GetMessage();
+
+    }
+}
